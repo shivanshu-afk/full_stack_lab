@@ -1,0 +1,32 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (import {useEffect, useState} from "react";
+    function App() {
+      let score=0;
+      const [count,setcount]=useState(0);
+      function incm(){
+        setcount(count+1);
+        score++;
+        console.log(score);
+        
+      }
+      useEffect(()=>{
+        console.log("this is a useEffect hook");
+        
+      },[count]);
+      return (
+       <div>
+        <h1>{count}</h1>
+        <button onClick={incm}>increment</button>
+       </div>
+       
+      
+      );
+    }
+  }
+  
+
+
+export default App;
